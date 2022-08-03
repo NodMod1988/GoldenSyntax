@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Dmg created in Heroes class. closes #5">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Dmg created in Enemy class. closes #6">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +48,7 @@
       <workItem from="1659517404447" duration="835000" />
       <workItem from="1659519131022" duration="582000" />
       <workItem from="1659519861430" duration="3790000" />
-      <workItem from="1659531102672" duration="305000" />
+      <workItem from="1659531102672" duration="973000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -85,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659531306412</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dmg created in Enemy class. closes #6">
+      <created>1659531439041</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659531439041</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +115,7 @@
     <MESSAGE value="Create Enemy Class. closes #3" />
     <MESSAGE value="Create Getter/Setter for Enemy/Hero Class. closes #4" />
     <MESSAGE value="Dmg created in Heroes class. closes #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dmg created in Heroes class. closes #5" />
+    <MESSAGE value="Dmg created in Enemy class. closes #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dmg created in Enemy class. closes #6" />
   </component>
 </project>

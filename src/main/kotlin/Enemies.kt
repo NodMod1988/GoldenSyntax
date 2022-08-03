@@ -28,7 +28,7 @@ open class Enemies{
         this.dmg = dmg
     }
 
-    constructor(name: String, hp: Double){
+    constructor(name: String, hp: Double, dmg:Double){
         setName(name)
         setHp(hp)
         setDmg(dmg)
