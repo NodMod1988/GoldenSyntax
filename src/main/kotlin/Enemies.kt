@@ -3,7 +3,7 @@ open class Enemies{
     private var name: String = ""
     private var hp: Double = 0.0
 
-    fun getGp(): Double{
+    fun getHp(): Double{
         return hp
     }
 

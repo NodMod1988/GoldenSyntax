@@ -4,8 +4,9 @@ open class Heroes{
 
     private var name: String = ""
     private var hp: Double = 0.0
+    private var dmg: Double = 0.0
 
-    fun getGp(): Double{
+    fun getHp(): Double{
         return hp
     }
 
@@ -21,8 +22,17 @@ open class Heroes{
         this.name = name
     }
 
-    constructor(name: String, hp: Double){
+    fun getDmg(): Double{
+        return dmg
+    }
+
+    fun setDmg(dmg: Double){
+        this.dmg = dmg
+    }
+
+    constructor(name: String, hp: Double, dmg: Double){
         setName(name)
         setHp(hp)
+        setDmg(dmg)
     }
 }
