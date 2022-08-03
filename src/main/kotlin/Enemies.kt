@@ -3,6 +3,7 @@ open class Enemies{
     private var name: String = ""
     private var hp: Double = 0.0
     private var dmg: Double = 0.0
+    private var moral: Int = 0
 
     fun getHp(): Double{
         return hp
@@ -28,9 +29,18 @@ open class Enemies{
         this.dmg = dmg
     }
 
-    constructor(name: String, hp: Double, dmg:Double){
+    fun getMoral(): Int{
+        return moral
+    }
+
+    fun setMoral(moral: Int){
+        this.moral = moral
+    }
+
+    constructor(name: String, hp: Double, dmg: Double, moral: Int){
         setName(name)
         setHp(hp)
         setDmg(dmg)
+        setMoral(moral)
     }
 }
