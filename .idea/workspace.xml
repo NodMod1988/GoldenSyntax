@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Create Getter/Setter for Enemy/Hero Class. closes #4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Dmg created in Heroes class. closes #5">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
       <workItem from="1659517404447" duration="835000" />
       <workItem from="1659519131022" duration="582000" />
       <workItem from="1659519861430" duration="3790000" />
-      <workItem from="1659531102672" duration="166000" />
+      <workItem from="1659531102672" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -80,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659525007259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Dmg created in Heroes class. closes #5">
+      <created>1659531306412</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659531306412</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +107,7 @@
     <MESSAGE value="Create Heroe Class. closes #2" />
     <MESSAGE value="Create Enemy Class. closes #3" />
     <MESSAGE value="Create Getter/Setter for Enemy/Hero Class. closes #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Getter/Setter for Enemy/Hero Class. closes #4" />
+    <MESSAGE value="Dmg created in Heroes class. closes #5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dmg created in Heroes class. closes #5" />
   </component>
 </project>
