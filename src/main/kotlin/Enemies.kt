@@ -1,9 +1,22 @@
 open class Enemies{
 
-    private var name: String = ""
-    private var hp: Double = 0.0
-    private var dmg: Double = 0.0
-    private var moral: Int = 0
+    private var name: String
+    private var hp: Double
+    private var dmg: Double
+
+    constructor( name: String,hp: Double, dmg: Double){
+        this.name = name
+        this.hp = hp
+        this.dmg = dmg
+    }
+
+    fun getName(): String{
+        return name
+    }
+
+    fun setName(name:String){
+        this.name = name
+    }
 
     fun getHp(): Double{
         return hp
@@ -13,34 +26,15 @@ open class Enemies{
         this.hp = hp
     }
 
-    fun getName(): String{
-        return name
-    }
-
-    fun setName(name: String){
-        this.name = name
-    }
-
-    fun getDmg(): Double{
+    fun getDmg():Double{
         return dmg
     }
 
-    fun setDmg(dmg: Double){
+    fun setDmg(dmg:Double){
         this.dmg = dmg
     }
 
-    fun getMoral(): Int{
-        return moral
-    }
-
-    fun setMoral(moral: Int){
-        this.moral = moral
-    }
-
-    constructor(name: String, hp: Double, dmg: Double, moral: Int){
-        setName(name)
-        setHp(hp)
-        setDmg(dmg)
-        setMoral(moral)
+    open fun attack(hero: Heroes): Heroes{
+        return hero
     }
 }

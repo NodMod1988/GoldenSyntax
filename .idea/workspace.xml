@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Refactor constructor in Enemies class">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Added Abschlussaufgabe.docx in ressources">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,6 +44,25 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/niewe/OneDrive/Desktop/Syntax/Modul2_Grundlagen_der_Programmierung/Woche7/GoldenSyntax&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ressources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="GoldenSyntax" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +75,9 @@
       <workItem from="1659519131022" duration="582000" />
       <workItem from="1659519861430" duration="3790000" />
       <workItem from="1659531102672" duration="2733000" />
+      <workItem from="1659575064079" duration="12574000" />
+      <workItem from="1659616481879" duration="996000" />
+      <workItem from="1659648360045" duration="7876000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -101,7 +128,35 @@
       <option name="project" value="LOCAL" />
       <updated>1659532108434</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create Warrior class. closes #7">
+      <created>1659575512467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659575512467</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create Magician class. closes #9">
+      <created>1659685539353</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659685539353</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Push to develop">
+      <created>1659689175493</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659689175493</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Abschlussaufgabe.docx in ressources">
+      <created>1659690238665</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659690238665</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +181,10 @@
     <MESSAGE value="Dmg created in Heroes class. closes #5" />
     <MESSAGE value="Dmg created in Enemy class. closes #6" />
     <MESSAGE value="Refactor constructor in Enemies class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor constructor in Enemies class" />
+    <MESSAGE value="Create Warrior class. closes #7" />
+    <MESSAGE value="Create Magician class. closes #9" />
+    <MESSAGE value="Push to develop" />
+    <MESSAGE value="Added Abschlussaufgabe.docx in ressources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Abschlussaufgabe.docx in ressources" />
   </component>
 </project>
