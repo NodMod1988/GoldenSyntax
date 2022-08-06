@@ -37,4 +37,15 @@ open class Enemies{
     open fun attack(hero: Heroes): Heroes{
         return hero
     }
+
+    open fun createEnemy(enemies: Enemies):Enemies{
+        var counter = true
+        if (counter == true){
+            var newEnemy: Enemies = Enemies("Jürgen", hp = 100.0, dmg = 20.0)
+            counter = false
+        }else if(counter == false){
+            println("Aktion nicht mehr durchfuehrbar")
+        }
+        return  enemies
+    }
 }

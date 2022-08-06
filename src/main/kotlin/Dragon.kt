@@ -4,4 +4,6 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
         hero.setHp(hero.getHp()-getDmg())
         return hero
     }
+
+
 }

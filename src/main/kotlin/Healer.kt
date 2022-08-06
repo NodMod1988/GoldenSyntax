@@ -10,4 +10,6 @@ class Healer(name:String, hp: Double, dmg: Double) : Heroes(name,hp,dmg) {
         heroes.setHp(heroes.getHp() + 30)
         return heroes
     }
+
+
 }
