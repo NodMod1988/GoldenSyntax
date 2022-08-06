@@ -38,4 +38,8 @@ open class Heroes{
     open fun attack(enemy: Enemies): Enemies{
         return enemy
     }
+
+    open fun block(): Double{
+        return 1.0
+    }
 }

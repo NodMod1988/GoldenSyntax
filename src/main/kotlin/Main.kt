@@ -3,10 +3,15 @@
 
         var drache: Dragon = Dragon("Paul", 100.0, 100.0)
         var held: Warrior = Warrior("Günther", 100.0, 10.0)
-
+        println("Spiel Startet")
         while (drache.getHp() > 0 && held.getHp() > 0){
+        var aktion = """ 
+                         Aktion für den Helden ausführen 
+                         angreifen ja/nein
+                     """.trimIndent()
+            println(aktion)
 
-            println("Drache angreifen?")
+
             var a = readln()
             when(a){
                 "ja" -> held.attack(drache)
