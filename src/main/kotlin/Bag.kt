@@ -14,7 +14,7 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
 
     fun useVitamins(heroes: Heroes): Heroes{
         if(this.vitamins == 1){
-            heroes.setDmg(heroes.getDmg() * 0.1)
+            heroes.setDmg(heroes.getDmg()+heroes.getDmg() *  0.1)
             this.vitamins --
         }
         else if(this.vitamins == 0){
