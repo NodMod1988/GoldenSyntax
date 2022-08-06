@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="attack method implemented in magician class. closes #15">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" afterDir="false" />
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="created healer class">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <workItem from="1659575064079" duration="12574000" />
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
-      <workItem from="1659781156567" duration="540000" />
+      <workItem from="1659781156567" duration="1638000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659691679872</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="created healer class">
+      <created>1659781867005</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659781867005</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +200,7 @@
     <MESSAGE value="Push to develop" />
     <MESSAGE value="Added Abschlussaufgabe.docx in ressources" />
     <MESSAGE value="attack method implemented in magician class. closes #15" />
-    <option name="LAST_COMMIT_MESSAGE" value="attack method implemented in magician class. closes #15" />
+    <MESSAGE value="created healer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created healer class" />
   </component>
 </project>
