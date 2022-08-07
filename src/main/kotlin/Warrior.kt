@@ -6,6 +6,7 @@ class Warrior(name: String, hp: Double, dmg: Double) : Heroes(name, hp, dmg) {
     }
 
     override fun block(): Double {
+        println("Der Held ${getName()} blockiert den Angriff ")
         return 0.7
     }
 }
