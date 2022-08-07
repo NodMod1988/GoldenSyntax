@@ -38,6 +38,10 @@ open class Enemies{
         return hero
     }
 
+    fun block(): Double{
+        return 0.4
+    }
+
     open fun createEnemy(enemies: Enemies):Enemies{
         return enemies
     }

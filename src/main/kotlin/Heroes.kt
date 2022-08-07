@@ -42,4 +42,5 @@ open class Heroes{
     open fun block(): Double{
         return 1.0
     }
+
 }
