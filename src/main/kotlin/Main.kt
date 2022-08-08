@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 fun main() {
 
     var dragon: Dragon = Dragon("Paul", 1000.0, 50.0)
@@ -7,6 +5,8 @@ fun main() {
     var healer: Healer = Healer("Jürgen", 100.0, 10.0)
     var magician: Magician = Magician("William", 100.0, 25.0)
     var bag: Bag = Bag()
+
+    var runnable = true
 
     var heroesList: MutableList<Heroes> = mutableListOf(held, healer, magician)
     var enemyList: MutableList<Enemies> = mutableListOf(dragon)
@@ -33,19 +33,36 @@ fun main() {
     println("Spiel Startet")
     while (dragon.getHp() > 0 && held.getHp() > 0 ) {
 
-
         println(actionHero)
-        var a = readln()
-        when (a) {
-            "1" -> held.attack(dragon)
+        var heroInput = readln()
+        when (heroInput) {
+            "1" -> held.attack(enemyList.random())
             "2" -> held.block()
-            "3" -> held.useBag(bag.useHealdrink(held))
+            "3" -> held.useBag(bag.useHealdrink(heroesList))
             "4" -> held.groupAttack(enemyList)
         }
-        println(bag.healdrinks)
 
-        dragon.createEnemy(enemyList)
-        dragon.attack(held)
+        println(actionHealer)
+        var healerInput = readln()
+        when(healerInput){
+            "1" -> healer.attack(dragon)
+            "2" -> healer.heal(held)
+            //"3" -> healer.useBag(bag.useVitamins(held))
+            "4" -> healer.healGroup(heroesList)
+        }
+
+        println(actionMagician)
+        var magicianInput = readln()
+        when(magicianInput){
+            "1" -> magician.attack(dragon)
+            "2" -> magician.useBag(heroesList)
+            //"3" -> healer.useBag(bag.useVitamins(held))
+            "4" -> healer.healGroup(heroesList)
+        }
+
+        enemyList = dragon.createEnemy(enemyList)
+        println(enemyList.size)
+        dragon.attack(heroesList.random())
 
         if(held.getHp()<= 0){
             println("Drache ${dragon.getName()} gewinnt den Kamp!")

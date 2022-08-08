@@ -1,16 +1,35 @@
 class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
 
-    fun useHealdrink(heroes: Heroes): Heroes{
+    fun useHealdrink(heroesList:MutableList<Heroes>): MutableList<Heroes>{
         if(this.healdrinks !=0){
-            heroes.setHp(heroes.getHp() + 50)
-            println("Der Held ${heroes.getName()} hat einen Heiltrank genommen")
+            println("Choose a hero: ")
+            for (i in heroesList.indices){
+                println("${heroesList[i].getName()}")
+                var chooseHero = readln()
+                when (chooseHero){
+                    "held" -> {
+                        heroesList[0].setHp(heroesList[0].getHp() + 50)
+                        println("Der Held ${heroesList[0].getName()} hat einen Heiltrank genommen")
+                    }
+                    "magier" -> {
+                        heroesList[1].setHp(heroesList[1].getHp() + 50)
+                        println("Der Held ${heroesList[1].getName()} hat einen Heiltrank genommen")
+                    }
+                    "heiler" -> {
+                        heroesList[2].setHp(heroesList[2].getHp() + 50)
+                        println("Der Held ${heroesList[2].getName()} hat einen Heiltrank genommen")
+                    }
+
+                }
+            }
+
             this.healdrinks--
         }
         else if(this.healdrinks == 0){
             println("Heiltränke aufgebraucht")
-            return heroes
+            return heroesList
         }
-        return heroes
+        return heroesList
     }
 
     fun useVitamins(heroes: Heroes): Heroes{

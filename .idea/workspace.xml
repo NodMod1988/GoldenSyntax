@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="useBag methode in Heroes class implemented">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="added held.groupAttack in Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -80,7 +79,7 @@
       <workItem from="1659575064079" duration="12574000" />
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
-      <workItem from="1659781156567" duration="22080000" />
+      <workItem from="1659781156567" duration="27127000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -257,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659950823380</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added held.groupAttack in Main">
+      <created>1659952432177</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1659952432177</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +305,18 @@
     <MESSAGE value="Create Enemy in Dragon class modified" />
     <MESSAGE value="Created runnable boolean variable in Dragon class" />
     <MESSAGE value="useBag methode in Heroes class implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="useBag methode in Heroes class implemented" />
+    <MESSAGE value="added held.groupAttack in Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="added held.groupAttack in Main" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

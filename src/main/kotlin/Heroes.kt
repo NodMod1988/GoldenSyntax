@@ -47,7 +47,7 @@ open class Heroes{
         return false
     }
 
-    open fun useBag(heroes:Heroes): Heroes{
+    open fun useBag(heroes: MutableList<Heroes>): MutableList<Heroes>{
         return heroes
     }
 
