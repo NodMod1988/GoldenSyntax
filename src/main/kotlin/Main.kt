@@ -10,28 +10,27 @@ fun main() {
     var heroesList: MutableList<Heroes> = mutableListOf(held, healer, magician)
     var enemyList: MutableList<Enemies> = mutableListOf(dragon)
 
-
-    println("Spiel Startet")
-    while (dragon.getHp() > 0 && held.getHp() > 0 || healer.getHp() > 0 || magician.getHp() > 0) {
-
-        var actionHero = """ 
+    var actionHero = """ 
                          Aktion für den Helden auswählen 
                          1: Gegner Angreifen  2: Angriff Blockieren
                          3: Tasche Benutzen   4: Gruppenschaden 
                      """.trimIndent()
 
-        var actionHealer = """ 
+    var actionHealer = """ 
                          Aktion für den Helden auswählen 
                          1: Gruppe heilen     2: Schutzzauber anwenden
                          3: Tasche Benutzen   4: Verbündeten Heilen
                      """.trimIndent()
 
-        var actionMagician = """ 
+    var actionMagician = """ 
                          Aktion für den Helden auswählen 
                          1: Feuer Zauber      2: Wasser Zauber
                          3: Tasche Benutzen   4: Verstecken
                      """.trimIndent()
 
+
+    println("Spiel Startet")
+    while (dragon.getHp() > 0 && held.getHp() > 0 || healer.getHp() > 0 || magician.getHp() > 0) {
 
 
         println(actionHero)
@@ -39,6 +38,7 @@ fun main() {
         when (a) {
             "1" -> held.attack(dragon)
             "2" -> held.block()
+
         }
     }
 }

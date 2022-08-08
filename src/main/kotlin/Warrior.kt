@@ -9,4 +9,13 @@ class Warrior(name: String, hp: Double, dmg: Double) : Heroes(name, hp, dmg) {
     override fun block(): Double {
         return 0.7
     }
+
+    fun groupAttack(enemies: MutableList<Enemies>) : MutableList<Enemies>{
+        for (i in enemies.indices){
+            enemies[i].setHp(enemies[i].getHp() - (0.55 * enemies[i].block()))
+        }
+        println("Alle gegner haben ${getDmg()} erhalten")
+        return mutableListOf<Enemies>()
+    }
+
 }
