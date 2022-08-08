@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Helden und Feinlisten erstellt">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Warrior attack funktion editiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Warrior.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Warrior.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <workItem from="1659575064079" duration="12574000" />
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
-      <workItem from="1659781156567" duration="13544000" />
+      <workItem from="1659781156567" duration="15854000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -216,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659862573810</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Warrior attack funktion editiert">
+      <created>1659910192317</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659910192317</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +257,7 @@
     <MESSAGE value="Override createEnemy in Dragon Class" />
     <MESSAGE value="Add Block function in heroes class" />
     <MESSAGE value="Helden und Feinlisten erstellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Helden und Feinlisten erstellt" />
+    <MESSAGE value="Warrior attack funktion editiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Warrior attack funktion editiert" />
   </component>
 </project>

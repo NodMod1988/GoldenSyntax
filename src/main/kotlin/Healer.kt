@@ -11,5 +11,11 @@ class Healer(name:String, hp: Double, dmg: Double) : Heroes(name,hp,dmg) {
         return heroes
     }
 
+    fun healGroup(heroes:MutableList<Heroes>) : MutableList<Heroes>{
+        for (i in heroes.indices){
+            heroes[i].setHp(getHp() + 30.0)
+        }
+        return mutableListOf<Heroes>()
+    }
 
 }

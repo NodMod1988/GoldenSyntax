@@ -43,4 +43,8 @@ open class Heroes{
         return 1.0
     }
 
+    open  fun dodge():Boolean{
+        return false
+    }
+
 }

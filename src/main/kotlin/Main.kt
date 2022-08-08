@@ -12,14 +12,29 @@ fun main() {
 
 
     println("Spiel Startet")
-    while (dragon.getHp() > 0 && heroesList[0].getHp() > 0 ) {
+    while (dragon.getHp() > 0 && held.getHp() > 0 || healer.getHp() > 0 || magician.getHp() > 0) {
 
-        var aktionHeld = """ 
+        var actionHero = """ 
                          Aktion für den Helden auswählen 
                          1: Gegner Angreifen  2: Angriff Blockieren
+                         3: Tasche Benutzen   4: Gruppenschaden 
+                     """.trimIndent()
+
+        var actionHealer = """ 
+                         Aktion für den Helden auswählen 
+                         1: Gruppe heilen     2: Schutzzauber anwenden
+                         3: Tasche Benutzen   4: Verbündeten Heilen
+                     """.trimIndent()
+
+        var actionMagician = """ 
+                         Aktion für den Helden auswählen 
+                         1: Feuer Zauber      2: Wasser Zauber
                          3: Tasche Benutzen   4: Verstecken
                      """.trimIndent()
-        println(aktionHeld)
+
+
+
+        println(actionHero)
         var a = readln()
         when (a) {
             "1" -> held.attack(dragon)
@@ -27,5 +42,3 @@ fun main() {
         }
     }
 }
-
-
