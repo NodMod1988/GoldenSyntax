@@ -42,7 +42,7 @@ open class Enemies{
         return 0.4
     }
 
-    open fun createEnemy(enemies: Enemies):Enemies{
+    open fun createEnemy(enemies: MutableList<Enemies>):MutableList<Enemies>{
         return enemies
     }
 }
