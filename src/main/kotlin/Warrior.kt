@@ -13,6 +13,7 @@ class Warrior(name: String, hp: Double, dmg: Double) : Heroes(name, hp, dmg) {
     fun groupAttack(enemies: MutableList<Enemies>) : MutableList<Enemies>{
         for (i in enemies.indices){
             enemies[i].setHp(enemies[i].getHp() - (0.55 * enemies[i].block()))
+            println("Gruppenschaden: ${enemies[i].getHp()}")
         }
         println("Alle gegner haben ${getDmg()} erhalten")
         return mutableListOf<Enemies>()

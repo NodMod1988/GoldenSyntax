@@ -47,8 +47,8 @@ open class Heroes{
         return false
     }
 
-    open fun useBag(bag:Bag): Bag{
-        return bag
+    open fun useBag(heroes:Heroes): Heroes{
+        return heroes
     }
 
 }

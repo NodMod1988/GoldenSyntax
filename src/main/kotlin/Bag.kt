@@ -1,8 +1,9 @@
 class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
 
     fun useHealdrink(heroes: Heroes): Heroes{
-        if(this.healdrinks >0){
+        if(this.healdrinks !=0){
             heroes.setHp(heroes.getHp() + 50)
+            println("Der Held ${heroes.getName()} hat einen Heiltrank genommen")
             this.healdrinks--
         }
         else if(this.healdrinks == 0){

@@ -13,20 +13,20 @@ fun main() {
 
     var actionHero = """ 
                          Aktion für den Helden auswählen 
-                         1: Gegner Angreifen  2: Angriff Blockieren
-                         3: Tasche Benutzen   4: Gruppenschaden 
+                         1: Gegner Angreifen    2: Angriff Blockieren
+                         3: Heiltrank Benutzen  4: Gruppenschaden 
                      """.trimIndent()
 
     var actionHealer = """ 
                          Aktion für den Helden auswählen 
                          1: Gruppe heilen     2: Schutzzauber anwenden
-                         3: Tasche Benutzen   4: Verbündeten Heilen
+                         3: Vitamin Benutzen  4: Verbündeten Heilen
                      """.trimIndent()
 
     var actionMagician = """ 
                          Aktion für den Helden auswählen 
-                         1: Feuer Zauber      2: Wasser Zauber
-                         3: Tasche Benutzen   4: Verstecken
+                         1: Feuer Zauber        2: Wasser Zauber
+                         3: Heiltrank Benutzen  4: Verstecken
                      """.trimIndent()
 
 
@@ -39,8 +39,10 @@ fun main() {
         when (a) {
             "1" -> held.attack(dragon)
             "2" -> held.block()
-            "3" -> held
+            "3" -> held.useBag(bag.useHealdrink(held))
+            "4" -> held.groupAttack(enemyList)
         }
+        println(bag.healdrinks)
 
         dragon.createEnemy(enemyList)
         dragon.attack(held)
