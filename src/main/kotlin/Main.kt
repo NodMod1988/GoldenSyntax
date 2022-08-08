@@ -38,7 +38,9 @@ fun main() {
         when (a) {
             "1" -> held.attack(dragon)
             "2" -> held.block()
-
         }
+
+        dragon.createEnemy(enemyList)
+        dragon.attack(held)
     }
 }

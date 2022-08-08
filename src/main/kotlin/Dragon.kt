@@ -1,22 +1,23 @@
 class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
+    var runnable = true
+
     override fun attack(hero: Heroes): Heroes {
         hero.setHp(hero.getHp()-getDmg()*hero.block())
+        println("Der Drache ${getName()} hat den Helden ${hero.getName()} gehauen: ${hero.getHp()}")
         return hero
     }
 
     override fun createEnemy(enemies: MutableList<Enemies>): MutableList<Enemies> {
-        var counter = true
-        if (counter){
-            var newEnemy: Enemies = Enemies("Jürgen", hp = 100.0, dmg = 20.0)
+        if (runnable){
+            var newEnemy: Dragon = Dragon("Jürgen", hp = 100.0, dmg = 20.0)
+            println("")
             enemies.add(newEnemy)
 
-        }else if(!counter){
+        }else if(!runnable){
             println("Aktion nicht mehr durchfuehrbar")
         }
-        counter = false
+        runnable = false
         return  enemies
     }
-
-
 }
