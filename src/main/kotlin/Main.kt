@@ -6,6 +6,7 @@ fun main() {
     var held: Warrior = Warrior("Günther", 100.0, 30.0)
     var healer: Healer = Healer("Jürgen", 100.0, 10.0)
     var magician: Magician = Magician("William", 100.0, 25.0)
+    var bag: Bag = Bag()
 
     var heroesList: MutableList<Heroes> = mutableListOf(held, healer, magician)
     var enemyList: MutableList<Enemies> = mutableListOf(dragon)
@@ -30,7 +31,7 @@ fun main() {
 
 
     println("Spiel Startet")
-    while (dragon.getHp() > 0 && held.getHp() > 0 || healer.getHp() > 0 || magician.getHp() > 0) {
+    while (dragon.getHp() > 0 && held.getHp() > 0 ) {
 
 
         println(actionHero)
@@ -38,9 +39,16 @@ fun main() {
         when (a) {
             "1" -> held.attack(dragon)
             "2" -> held.block()
+            "3" -> held
         }
 
         dragon.createEnemy(enemyList)
         dragon.attack(held)
+
+        if(held.getHp()<= 0){
+            println("Drache ${dragon.getName()} gewinnt den Kamp!")
+        }else if(enemyList[0].getHp() <= 0){
+            println("Der Held ${held.getName()} gewinnt den Kampf!")
+        }
     }
 }
