@@ -12,7 +12,7 @@ fun main() {
     var enemyList: MutableList<Enemies> = mutableListOf(dragon)
 
     var actionHero = """ 
-                         Aktion für den Helden auswählen 
+                         Aktion für den ${held.getName()} auswählen 
                          1: Gegner Angreifen    2: Angriff Blockieren
                          3: Heiltrank Benutzen  4: Gruppenschaden 
                      """.trimIndent()
@@ -63,13 +63,12 @@ fun main() {
 
 
         enemyList = dragon.createEnemy(enemyList)
-        println(enemyList.size)
         enemyList.random().attack(heroesList.random())
 
-        if(held.getHp()<= 0){
-            println("Drache ${dragon.getName()} gewinnt den Kamp!")
-        }else if(enemyList[0].getHp() <= 0){
-            println("Der Held ${held.getName()} gewinnt den Kampf!")
+        if(enemyList[0].getHp()<= 0 || enemyList[1].getHp() <= 0){
+            println("Die Gegner gewinnen den Kampf!")
+        }else if(held.getHp() <= 0 || healer.getHp()<=0 || magician.getHp()<= 0){
+            println("Der Helden  gewinnen den Kampf!")
         }
     }
 }

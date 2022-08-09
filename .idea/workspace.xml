@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="created enemyList = dragon.createEnemy(enemyList) in main function">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="random aufruf in Enemylist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +79,7 @@
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
       <workItem from="1659781156567" duration="33416000" />
-      <workItem from="1659992891660" duration="2741000" />
+      <workItem from="1659992891660" duration="5657000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -272,7 +270,28 @@
       <option name="project" value="LOCAL" />
       <updated>1659960937727</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="recreated useVitamins method in Bag class">
+      <created>1660029257182</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1660029257182</updated>
+    </task>
+    <task id="LOCAL-00029" summary="recreated useVitamins method in Bag class">
+      <created>1660029366806</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1660029366806</updated>
+    </task>
+    <task id="LOCAL-00030" summary="random aufruf in Enemylist">
+      <created>1660029513805</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1660029513805</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,8 +309,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Heroe Class. closes #2" />
-    <MESSAGE value="Create Enemy Class. closes #3" />
     <MESSAGE value="Create Getter/Setter for Enemy/Hero Class. closes #4" />
     <MESSAGE value="Dmg created in Heroes class. closes #5" />
     <MESSAGE value="Dmg created in Enemy class. closes #6" />
@@ -315,6 +332,8 @@
     <MESSAGE value="useBag methode in Heroes class implemented" />
     <MESSAGE value="added held.groupAttack in Main" />
     <MESSAGE value="created enemyList = dragon.createEnemy(enemyList) in main function" />
-    <option name="LAST_COMMIT_MESSAGE" value="created enemyList = dragon.createEnemy(enemyList) in main function" />
+    <MESSAGE value="recreated useVitamins method in Bag class" />
+    <MESSAGE value="random aufruf in Enemylist" />
+    <option name="LAST_COMMIT_MESSAGE" value="random aufruf in Enemylist" />
   </component>
 </project>
