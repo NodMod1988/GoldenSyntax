@@ -43,15 +43,15 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
                 when (chooseHero) {
                     "held" -> {
                         heroesList[0].setHp(heroesList[0].getHp() + 50)
-                        println("Der Held ${heroesList[0].getName()} hat einen Heiltrank genommen")
+                        println("Der Held ${heroesList[0].getName()} hat ein Vitamin genommen")
                     }
                     "heiler" -> {
                         heroesList[1].setHp(heroesList[1].getHp() + 50)
-                        println("Der Held ${heroesList[1].getName()} hat einen Heiltrank genommen")
+                        println("Der Held ${heroesList[1].getName()} hat ein Vitamin genommen")
                     }
                     "magier" -> {
                         heroesList[2].setHp(heroesList[2].getHp() + 50)
-                        println("Der Held ${heroesList[2].getName()} hat einen Heiltrank genommen")
+                        println("Der Held ${heroesList[2].getName()} hat ein Vitamin genommen")
                     }
                     else -> {
                         println("Keine korrekte Eingabe!")
