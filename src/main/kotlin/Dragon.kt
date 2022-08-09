@@ -15,7 +15,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
             println("Der Drache ${getName()} hat Gruppenschaden gemacht: ${heroes[i].getHp()}")
         }
         println("Alle Helden haben ${getDmg()} erhalten")
-        return mutableListOf<Heroes>()
+        return mutableListOf()
     }
 
     override fun createEnemy(enemies: MutableList<Enemies>): MutableList<Enemies> {
