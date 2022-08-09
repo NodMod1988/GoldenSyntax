@@ -45,7 +45,7 @@ fun main() {
         println(actionHealer)
         var healerInput = readln()
         when(healerInput){
-            "1" -> healer.attack(dragon)
+            "1" -> healer.attack(enemyList.random())
             "2" -> healer.heal(held)
             "3" -> healer.useBag(bag.useVitamins(heroesList))
             "4" -> healer.healGroup(heroesList)
@@ -63,7 +63,6 @@ fun main() {
 
         enemyList = dragon.createEnemy(enemyList)
         var functionList = listOf(enemyList.random().attack(heroesList.random()), enemyList.random().attackGroup(heroesList))
-        functionList.random()
         counter++
 
         if(enemyList[0].getHp()<= 0 || enemyList[1].getHp() <= 0){

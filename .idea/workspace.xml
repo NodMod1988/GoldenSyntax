@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Added counter in main">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Added enemy functionlist in main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Warrior.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Warrior.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
       <workItem from="1659781156567" duration="33416000" />
-      <workItem from="1659992891660" duration="9610000" />
+      <workItem from="1659992891660" duration="10619000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -340,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660035108595</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added enemy functionlist in main">
+      <created>1660036271174</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1660036271174</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +367,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Push to develop" />
     <MESSAGE value="Added Abschlussaufgabe.docx in ressources" />
     <MESSAGE value="attack method implemented in magician class. closes #15" />
     <MESSAGE value="created healer class" />
@@ -383,6 +391,7 @@
     <MESSAGE value="implemented cursed method in enemies class and overriden in Dragon class" />
     <MESSAGE value="implemented isCursed: Boolean parameter in warrior, magician and healer class" />
     <MESSAGE value="Added counter in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added counter in main" />
+    <MESSAGE value="Added enemy functionlist in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added enemy functionlist in main" />
   </component>
 </project>

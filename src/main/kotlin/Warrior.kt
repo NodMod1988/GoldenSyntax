@@ -1,7 +1,7 @@
 class Warrior(name: String, hp: Double, dmg: Double, var isCursed: Boolean = false) : Heroes(name, hp, dmg) {
 
     override fun attack(enemy: Enemies): Enemies {
-        enemy.setHp(enemy.getHp() - (0.55 * enemy.block()))
+        enemy.setHp(enemy.getHp() - getDmg())
         println("Der Held ${getName()} hat den Gegner ${enemy.getName()} gehauen: ${enemy.getHp()}")
         return enemy
     }

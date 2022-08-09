@@ -6,7 +6,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
 
     override fun attack(hero: Heroes): Heroes {
-        hero.setHp(hero.getHp()-getDmg()*hero.block())
+        hero.setHp(hero.getHp()-getDmg())
         println("Der Drache ${getName()} hat den Helden ${hero.getName()} gehauen: ${hero.getHp()}")
         return hero
     }
@@ -16,7 +16,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
             heroes[i].setHp(heroes[i].getHp() - (0.55 * heroes[i].block()))
             println("Der Drache ${getName()} hat Gruppenschaden gemacht: ${heroes[i].getHp()}")
         }
-        println("Alle Helden haben ${getDmg()} erhalten")
+        println("Alle Helden haben ${getDmg()} Dmg erhalten")
         return mutableListOf()
     }
 
