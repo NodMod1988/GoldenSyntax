@@ -42,6 +42,10 @@ open class Enemies{
         return 0.4
     }
 
+    open fun attackGroup(heroes: MutableList<Heroes>) : MutableList<Heroes>{
+        return mutableListOf()
+    }
+
     open fun createEnemy(enemies: MutableList<Enemies>):MutableList<Enemies>{
         return enemies
     }
