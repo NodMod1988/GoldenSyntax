@@ -5,6 +5,7 @@ fun main() {
     var healer: Healer = Healer("Jürgen", 100.0, 10.0)
     var magician: Magician = Magician("William", 100.0, 25.0)
     var bag: Bag = Bag()
+    var counter: Int = 0
 
     var runnable = true
 
@@ -26,13 +27,13 @@ fun main() {
     var actionMagician = """ 
                          Aktion für den Magier auswählen 
                          1: Feuer Zauber        2: Wasser Zauber
-                         3: Heiltrank Benutzen  4: Verstecken
+                         3: Heiltrank Benutzen  4: Gruppe Angreifen
                      """.trimIndent()
 
 
     println("Spiel Startet")
     while (dragon.getHp() > 0 && held.getHp() > 0 ) {
-
+        println("Round $counter")
         println(actionHero)
         var heroInput = readln()
         when (heroInput) {
@@ -62,6 +63,8 @@ fun main() {
 
         enemyList = dragon.createEnemy(enemyList)
         enemyList.random().attack(heroesList.random())
+
+        counter++
 
         if(enemyList[0].getHp()<= 0 || enemyList[1].getHp() <= 0){
             println("Die Gegner gewinnen den Kampf!")
