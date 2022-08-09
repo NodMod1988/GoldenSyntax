@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="added held.groupAttack in Main">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="created enemyList = dragon.createEnemy(enemyList) in main function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,8 @@
       <workItem from="1659575064079" duration="12574000" />
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
-      <workItem from="1659781156567" duration="27127000" />
+      <workItem from="1659781156567" duration="33416000" />
+      <workItem from="1659992891660" duration="2741000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -263,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659952432177</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="created enemyList = dragon.createEnemy(enemyList) in main function">
+      <created>1659960937727</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1659960937727</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +290,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Main Class Created. closes #1" />
     <MESSAGE value="Create Heroe Class. closes #2" />
     <MESSAGE value="Create Enemy Class. closes #3" />
     <MESSAGE value="Create Getter/Setter for Enemy/Hero Class. closes #4" />
@@ -306,17 +314,7 @@
     <MESSAGE value="Created runnable boolean variable in Dragon class" />
     <MESSAGE value="useBag methode in Heroes class implemented" />
     <MESSAGE value="added held.groupAttack in Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="added held.groupAttack in Main" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>63</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="created enemyList = dragon.createEnemy(enemyList) in main function" />
+    <option name="LAST_COMMIT_MESSAGE" value="created enemyList = dragon.createEnemy(enemyList) in main function" />
   </component>
 </project>

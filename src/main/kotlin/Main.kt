@@ -18,13 +18,13 @@ fun main() {
                      """.trimIndent()
 
     var actionHealer = """ 
-                         Aktion für den Helden auswählen 
+                         Aktion für den Heiler auswählen 
                          1: Gruppe heilen     2: Schutzzauber anwenden
                          3: Vitamin Benutzen  4: Verbündeten Heilen
                      """.trimIndent()
 
     var actionMagician = """ 
-                         Aktion für den Helden auswählen 
+                         Aktion für den Magier auswählen 
                          1: Feuer Zauber        2: Wasser Zauber
                          3: Heiltrank Benutzen  4: Verstecken
                      """.trimIndent()
@@ -47,7 +47,7 @@ fun main() {
         when(healerInput){
             "1" -> healer.attack(dragon)
             "2" -> healer.heal(held)
-            //"3" -> healer.useBag(bag.useVitamins(held))
+            "3" -> healer.useBag(bag.useVitamins(heroesList))
             "4" -> healer.healGroup(heroesList)
         }
 
@@ -56,7 +56,7 @@ fun main() {
         when(magicianInput){
             "1" -> magician.attack(dragon)
             "2" -> magician.useBag(heroesList)
-            //"3" -> healer.useBag(bag.useVitamins(held))
+            "3" -> healer.useBag(bag.useVitamins(heroesList))
             "4" -> healer.healGroup(heroesList)
         }
 
