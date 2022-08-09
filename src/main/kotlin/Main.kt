@@ -60,8 +60,6 @@ fun main() {
             "4" -> healer.healGroup(heroesList)
         }
 
-
-
         enemyList = dragon.createEnemy(enemyList)
         enemyList.random().attack(heroesList.random())
 

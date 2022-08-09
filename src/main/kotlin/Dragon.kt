@@ -2,6 +2,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
     var runnable = true
 
+
     override fun attack(hero: Heroes): Heroes {
         hero.setHp(hero.getHp()-getDmg()*hero.block())
         println("Der Drache ${getName()} hat den Helden ${hero.getName()} gehauen: ${hero.getHp()}")
@@ -11,7 +12,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
     override fun attackGroup(heroes: MutableList<Heroes>) : MutableList<Heroes>{
         for (i in heroes.indices){
             heroes[i].setHp(heroes[i].getHp() - (0.55 * heroes[i].block()))
-            println("Gruppenschaden: ${heroes[i].getHp()}")
+            println("Der Drache ${getName()} hat Gruppenschaden gemacht: ${heroes[i].getHp()}")
         }
         println("Alle Helden haben ${getDmg()} erhalten")
         return mutableListOf<Heroes>()
