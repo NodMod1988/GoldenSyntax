@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Remove Heroes and Enemies implemented in Main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="TODO eingefügt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +75,7 @@
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
       <workItem from="1659781156567" duration="33416000" />
-      <workItem from="1659992891660" duration="19860000" />
+      <workItem from="1659992891660" duration="19934000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -384,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660046656917</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="TODO eingefügt">
+      <created>1660049066728</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1660049066728</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +403,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created createEnemy in Enemy Class" />
     <MESSAGE value="Override createEnemy in Dragon Class" />
     <MESSAGE value="Add Block function in heroes class" />
     <MESSAGE value="Helden und Feinlisten erstellt" />
@@ -427,6 +427,7 @@
     <MESSAGE value="edit actionHero, actionHealer, actionMagician" />
     <MESSAGE value="return type changed in enemies class for curseEnemy to Heroes" />
     <MESSAGE value="Remove Heroes and Enemies implemented in Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove Heroes and Enemies implemented in Main" />
+    <MESSAGE value="TODO eingefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO eingefügt" />
   </component>
 </project>

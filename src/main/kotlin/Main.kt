@@ -66,7 +66,7 @@ fun main() {
         var magicianInput = readln()
         when(magicianInput){
             "1" -> magician.attack(enemyList.random())
-            "2" -> magician.useBag(heroesList)
+            "2" -> magician.block()
             "3" -> magician.useBag(bag.useVitamins(heroesList))
             "4" -> magician.groupAttack(enemyList)
             }
