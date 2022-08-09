@@ -3,6 +3,8 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
     var runnable = true
     var cursed = false
 
+
+
     override fun attack(hero: Heroes): Heroes {
         hero.setHp(hero.getHp()-getDmg()*hero.block())
         println("Der Drache ${getName()} hat den Helden ${hero.getName()} gehauen: ${hero.getHp()}")

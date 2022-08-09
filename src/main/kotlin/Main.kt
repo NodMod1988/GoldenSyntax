@@ -7,7 +7,6 @@ fun main() {
     var bag: Bag = Bag()
     var counter: Int = 0
 
-    var runnable = true
 
     var heroesList: MutableList<Heroes> = mutableListOf(held, healer, magician)
     var enemyList: MutableList<Enemies> = mutableListOf(dragon)
@@ -61,9 +60,10 @@ fun main() {
             "4" -> healer.healGroup(heroesList)
         }
 
-        enemyList = dragon.createEnemy(enemyList)
-        enemyList.random().attack(heroesList.random())
 
+        enemyList = dragon.createEnemy(enemyList)
+        var functionList = listOf(enemyList.random().attack(heroesList.random()), enemyList.random().attackGroup(heroesList))
+        functionList.random()
         counter++
 
         if(enemyList[0].getHp()<= 0 || enemyList[1].getHp() <= 0){
