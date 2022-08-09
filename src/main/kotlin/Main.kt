@@ -12,19 +12,19 @@ fun main() {
     var enemyList: MutableList<Enemies> = mutableListOf(dragon)
 
     var actionHero = """ 
-                         Aktion für den ${held.getName()} auswählen 
+                         Aktion für den Helden ${held.getName()} auswählen 
                          1: Gegner Angreifen    2: Angriff Blockieren
                          3: Heiltrank Benutzen  4: Gruppenschaden 
                      """.trimIndent()
 
     var actionHealer = """ 
-                         Aktion für den Heiler auswählen 
+                         Aktion für den Heiler ${healer.getName()} auswählen 
                          1: Gruppe heilen     2: Schutzzauber anwenden
                          3: Vitamin Benutzen  4: Verbündeten Heilen
                      """.trimIndent()
 
     var actionMagician = """ 
-                         Aktion für den Magier auswählen 
+                         Aktion für den Magier ${magician.getName()} auswählen 
                          1: Feuer Zauber        2: Wasser Zauber
                          3: Heiltrank Benutzen  4: Gruppe Angreifen
                      """.trimIndent()
@@ -45,10 +45,10 @@ fun main() {
         println(actionHealer)
         var healerInput = readln()
         when(healerInput){
-            "1" -> healer.attack(enemyList.random())
+            "1" -> healer.healGroup(heroesList)
             "2" -> healer.heal(held)
             "3" -> healer.useBag(bag.useVitamins(heroesList))
-            "4" -> healer.healGroup(heroesList)
+            "4" -> healer.attack(enemyList.random())
         }
 
         println(actionMagician)
@@ -63,11 +63,12 @@ fun main() {
 
         enemyList = dragon.createEnemy(enemyList)
         var functionList = listOf(enemyList.random().attack(heroesList.random()), enemyList.random().attackGroup(heroesList))
+        functionList.random()
         counter++
 
-        if(enemyList[0].getHp()<= 0 || enemyList[1].getHp() <= 0){
+        if(heroesList[0].getHp()<= 0 || heroesList[1].getHp() <= 0 || heroesList[2].getHp() <= 0){
             println("Die Gegner gewinnen den Kampf!")
-        }else if(held.getHp() <= 0 || healer.getHp()<=0 || magician.getHp()<= 0){
+        }else if(enemyList[0].getHp() <= 0 || enemyList[1].getHp()<=0){
             println("Der Helden  gewinnen den Kampf!")
         }
     }
