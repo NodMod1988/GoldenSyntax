@@ -1,4 +1,4 @@
-class Magician(name: String, hp: Double, dmg: Double,isCursed: Boolean = false ) : Heroes(name, hp, dmg, isCursed) {
+class Magician(name: String, hp: Double, dmg: Double) : Heroes(name, hp, dmg) {
 
     override fun attack(enemy: Enemies): Enemies {
         setHp(enemy.getHp() - getDmg())

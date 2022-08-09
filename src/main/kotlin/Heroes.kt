@@ -4,9 +4,10 @@ open class Heroes{
     private var name: String
     private var hp: Double
     private var dmg: Double
-    private var isCursed: Boolean
+    private var isCursed: Boolean = false
+    private var isBlocking: Boolean = false
 
-    constructor(name: String, hp:Double, dmg: Double, isCursed:Boolean){
+    constructor(name: String, hp:Double, dmg: Double){
         this.name = name
         this.hp = hp
         this.dmg = dmg
@@ -15,6 +16,14 @@ open class Heroes{
 
     fun getName(): String{
         return name
+    }
+
+    fun setIsBlocking(isBlocking: Boolean){
+        this.name = name
+    }
+
+    fun getIsBlock(): Boolean{
+        return isBlocking
     }
 
     fun setName(name:String){
