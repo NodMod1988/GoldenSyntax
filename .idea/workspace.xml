@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="override attackGroup function in Dragon class modified">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" afterDir="false" />
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="implemented cursed method in enemies class and overriden in Dragon class">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Warrior.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Warrior.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1659616481879" duration="996000" />
       <workItem from="1659648360045" duration="11970000" />
       <workItem from="1659781156567" duration="33416000" />
-      <workItem from="1659992891660" duration="7366000" />
+      <workItem from="1659992891660" duration="7967000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -318,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660033615471</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="implemented cursed method in enemies class and overriden in Dragon class">
+      <created>1660034146275</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1660034146275</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +344,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactor constructor in Enemies class" />
     <MESSAGE value="Create Warrior class. closes #7" />
     <MESSAGE value="Create Magician class. closes #9" />
     <MESSAGE value="Push to develop" />
@@ -361,6 +368,7 @@
     <MESSAGE value="deleted for loops in bag class" />
     <MESSAGE value="override attackGroup function in Dragon class" />
     <MESSAGE value="override attackGroup function in Dragon class modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="override attackGroup function in Dragon class modified" />
+    <MESSAGE value="implemented cursed method in enemies class and overriden in Dragon class" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented cursed method in enemies class and overriden in Dragon class" />
   </component>
 </project>

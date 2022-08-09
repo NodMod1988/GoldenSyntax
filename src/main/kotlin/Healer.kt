@@ -1,4 +1,4 @@
-class Healer(name:String, hp: Double, dmg: Double) : Heroes(name,hp,dmg) {
+class Healer(name:String, hp: Double, dmg: Double,var isCursed: Boolean = false) : Heroes(name,hp,dmg) {
 
 
     override fun attack(enemy: Enemies): Enemies {
