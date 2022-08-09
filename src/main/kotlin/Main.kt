@@ -1,6 +1,6 @@
 fun main() {
 
-    var dragon: Dragon = Dragon("Paul", 1000.0, 50.0)
+    var dragon: Dragon = Dragon("Paul", 250.0, 50.0)
     var held: Warrior = Warrior("Uwe", 100.0, 30.0)
     var healer: Healer = Healer("Jürgen", 100.0, 10.0)
     var magician: Magician = Magician("William", 100.0, 25.0)
@@ -28,10 +28,12 @@ fun main() {
 
     var actionMagician = """ 
                          Aktion für den Magier ${magician.getName()} auswählen 
-                         1: Feuer Zauber        2: Wasser Zauber
+                         1: Angreifen           2: Abwehren
                          3: Heiltrank Benutzen  4: Gruppe Angreifen
                      """.trimIndent()
 
+
+    //TODO block funktion einfügen
 
     println("Spiel Startet")
     while (dragon.getHp() > 0 && held.getHp() > 0 ) {
@@ -63,15 +65,15 @@ fun main() {
         println(actionMagician)
         var magicianInput = readln()
         when(magicianInput){
-            "1" -> magician.attack(dragon)
+            "1" -> magician.attack(enemyList.random())
             "2" -> magician.useBag(heroesList)
-            "3" -> healer.useBag(bag.useVitamins(heroesList))
-            "4" -> healer.healGroup(heroesList)
+            "3" -> magician.useBag(bag.useVitamins(heroesList))
+            "4" -> magician.groupAttack(enemyList)
             }
         }
 
         for(i in heroesList.indices){
-            if(heroesList[i].getCursed() && curseCounter != 2){
+            if(heroesList[i].getCursed() && curseCounter != 2 && heroesList[i].getHp()>=0){
                 heroesList[i].setHp(heroesList[i].getHp()-10)
                 println("${heroesList[i].getName()} erleidet 10 dmg wegen des Fluchs")
                 curseCounter++
@@ -100,15 +102,13 @@ fun main() {
                 println("${enemyList[i].getName()} ist gestorben")
             }
         }
-
         enemyList.removeAll(removeEnemies)
-
         counter++
+    }
 
-        if(heroesList[0].getHp()<= 0 || heroesList[1].getHp() <= 0 || heroesList[2].getHp() <= 0){
-            println("Die Gegner gewinnen den Kampf!")
-        }else if(enemyList[0].getHp() <= 0 || enemyList[1].getHp()<=0){
-            println("Der Helden  gewinnen den Kampf!")
-        }
+    if(heroesList[0].getHp()<= 0 || heroesList[1].getHp() <= 0 || heroesList[2].getHp() <= 0){
+        println("Die Gegner gewinnen den Kampf!")
+    }else if(enemyList[0].getHp() <= 0 || enemyList[1].getHp()<=0){
+        println("Der Helden  gewinnen den Kampf!")
     }
 }

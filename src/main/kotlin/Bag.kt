@@ -7,17 +7,17 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
                 when (chooseHero) {
                     "held" -> {
                         heroesList[0].setHp(heroesList[0].getHp() + 50)
-                        println("Der Held ${heroesList[0].getName()} hat einen Heiltrank genommen: ${heroesList[0].getHp()}")
+                        println("Der Held ${heroesList[0].getName()} hat einen Heiltrank genommen: ${heroesList[0].getHp()} Hp")
 
                     }
                     "heiler" -> {
                         heroesList[1].setHp(heroesList[1].getHp() + 50)
-                        println("Der Heiler ${heroesList[1].getName()} hat einen Heiltrank genommen: ${heroesList[1].getHp()}")
+                        println("Der Heiler ${heroesList[1].getName()} hat einen Heiltrank genommen: ${heroesList[1].getHp()} Hp")
 
                     }
                     "magier" -> {
                         heroesList[2].setHp(heroesList[2].getHp() + 50)
-                        println("Der Magier ${heroesList[2].getName()} hat einen Heiltrank genommen: ${heroesList[2].getHp()}")
+                        println("Der Magier ${heroesList[2].getName()} hat einen Heiltrank genommen: ${heroesList[2].getHp()} Hp")
 
                     }
                     else -> {
@@ -26,7 +26,6 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
 
 
             }
-
             this.healdrinks--
         } else if (this.healdrinks == 0) {
             println("Heiltränke aufgebraucht")
@@ -42,17 +41,17 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
                 when (chooseHero) {
                     "held" -> {
                         heroesList[0].setDmg(heroesList[0].getDmg() + 50)
-                        println("Der Held ${heroesList[0].getName()} hat ein Vitamin genommen: ${heroesList[0].getDmg()}")
+                        println("Der Held ${heroesList[0].getName()} hat ein Vitamin genommen: ${heroesList[0].getDmg()} Dmg")
 
                     }
                     "heiler" -> {
                         heroesList[1].setDmg(heroesList[1].getDmg() + 50)
-                        println("Der Heiler ${heroesList[1].getName()} hat ein Vitamin genommen: ${heroesList[1].getDmg()}")
+                        println("Der Heiler ${heroesList[1].getName()} hat ein Vitamin genommen: ${heroesList[1].getDmg()} Dmg")
 
                     }
                     "magier" -> {
                         heroesList[2].setDmg(heroesList[2].getDmg() + 50)
-                        println("Der Magier ${heroesList[2].getName()} hat ein Vitamin genommen: ${heroesList[2].getDmg()}")
+                        println("Der Magier ${heroesList[2].getName()} hat ein Vitamin genommen: ${heroesList[2].getDmg()} Dmg")
 
                     }
                     else -> {
