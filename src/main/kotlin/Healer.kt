@@ -15,7 +15,7 @@ class Healer(name:String, hp: Double, dmg: Double, isCursed: Boolean = false) : 
         for (i in heroes.indices){
             heroes[i].setHp(getHp() + 30.0)
         }
-        println("Die gruppe wurde geheilt")
+        println("Die gruppe wurde geheilt mit 30 Hp")
         return mutableListOf()
     }
 }

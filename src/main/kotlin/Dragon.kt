@@ -33,6 +33,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
     override fun curseEnemy(hero: Heroes): Heroes {
         if(!hero.getCursed()){
             hero.setCursed(true)
+            println("${hero.getName()} wurde mit einem Fluch belegt")
         }
         return hero
     }
