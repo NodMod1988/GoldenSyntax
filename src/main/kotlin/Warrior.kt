@@ -12,7 +12,7 @@ class Warrior(name: String, hp: Double, dmg: Double, var isCursed: Boolean = fal
 
     fun groupAttack(enemies: MutableList<Enemies>) : MutableList<Enemies>{
         for (i in enemies.indices){
-            enemies[i].setHp(enemies[i].getHp() - (0.55 * enemies[i].block()))
+            enemies[i].setHp(enemies[i].getHp() - getDmg())
             println("Gruppenschaden: ${enemies[i].getHp()}")
         }
         println("Alle gegner haben ${getDmg()} erhalten")

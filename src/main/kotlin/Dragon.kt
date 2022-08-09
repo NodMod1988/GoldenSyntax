@@ -13,7 +13,7 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
     override fun attackGroup(heroes: MutableList<Heroes>) : MutableList<Heroes>{
         for (i in heroes.indices){
-            heroes[i].setHp(heroes[i].getHp() - (0.55 * heroes[i].block()))
+            heroes[i].setHp(heroes[i].getHp() - getDmg())
             println("Der Drache ${getName()} hat Gruppenschaden gemacht: ${heroes[i].getHp()}")
         }
         println("Alle Helden haben ${getDmg()} Dmg erhalten")
