@@ -49,4 +49,8 @@ open class Enemies{
     open fun createEnemy(enemies: MutableList<Enemies>):MutableList<Enemies>{
         return enemies
     }
+
+    open fun curseEnemy(hero: Heroes): Heroes{
+        return hero
+    }
 }

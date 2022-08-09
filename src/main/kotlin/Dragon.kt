@@ -1,7 +1,7 @@
 class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
     var runnable = true
-
+    var cursed = false
 
     override fun attack(hero: Heroes): Heroes {
         hero.setHp(hero.getHp()-getDmg()*hero.block())
@@ -26,5 +26,12 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
         }
         runnable = false
         return  enemies
+    }
+
+    override fun curseEnemy(hero: Heroes): Heroes {
+
+
+
+        return hero
     }
 }
