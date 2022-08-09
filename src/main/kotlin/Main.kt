@@ -60,9 +60,11 @@ fun main() {
             "4" -> healer.healGroup(heroesList)
         }
 
+
+
         enemyList = dragon.createEnemy(enemyList)
         println(enemyList.size)
-        dragon.attack(heroesList.random())
+        enemyList.random().attack(heroesList.random())
 
         if(held.getHp()<= 0){
             println("Drache ${dragon.getName()} gewinnt den Kamp!")

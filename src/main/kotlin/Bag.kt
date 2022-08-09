@@ -62,7 +62,7 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
 
             this.vitamins--
         } else if (this.vitamins == 0) {
-            println("Heiltränke aufgebraucht")
+            println("Vitamin aufgebraucht")
             return heroesList
         }
         return heroesList
