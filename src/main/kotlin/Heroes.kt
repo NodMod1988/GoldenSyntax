@@ -4,11 +4,13 @@ open class Heroes{
     private var name: String
     private var hp: Double
     private var dmg: Double
+    private var isCursed: Boolean
 
-    constructor(name: String, hp:Double, dmg: Double){
+    constructor(name: String, hp:Double, dmg: Double, isCursed:Boolean){
         this.name = name
         this.hp = hp
         this.dmg = dmg
+        this.isCursed = isCursed
     }
 
     fun getName(): String{
@@ -33,6 +35,14 @@ open class Heroes{
 
     fun setDmg(dmg: Double){
         this.dmg = dmg
+    }
+
+    fun getCursed():Boolean{
+        return isCursed
+    }
+
+    fun setCursed(isCursed: Boolean){
+        this.isCursed = isCursed
     }
 
     open fun attack(enemy: Enemies): Enemies{

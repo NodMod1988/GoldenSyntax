@@ -62,7 +62,7 @@ fun main() {
 
 
         enemyList = dragon.createEnemy(enemyList)
-        var functionList = listOf(enemyList.random().attack(heroesList.random()), enemyList.random().attackGroup(heroesList))
+        var functionList = listOf(enemyList[0].attack(heroesList.random()), enemyList[0].attackGroup(heroesList))
         functionList.random()
         counter++
 
