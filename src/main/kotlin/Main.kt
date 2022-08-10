@@ -35,7 +35,7 @@ fun main() {
 
 
     println("Spiel Startet")
-    while (dragon.getHp() > 0 && held.getHp() > 0 ) {
+    while (enemyList[0].getHp()>= 0 || enemyList[1].getHp() > 0 && held.getHp() > 0 || magician.getHp()>0 || healer.getHp()>=0) {
         println("Round $counter")
 
         if(held.getHp()>=0){
@@ -92,6 +92,9 @@ fun main() {
 
 
         enemyList = dragon.createEnemy(enemyList)
+
+
+
         var functionList = listOf(enemyList.random().attack(heroesList.random()), enemyList.random().attackGroup(heroesList), enemyList.random().curseEnemy(heroesList.random()))
         functionList.random()
 
