@@ -56,7 +56,7 @@ fun main() {
             "1" -> healer.healGroup(heroesList)
             "2" -> healer.protect(heroesList)
             "3" -> healer.useBag(bag.useVitamins(heroesList))
-            "4" -> healer.heal(held)
+            "4" -> healer.heal(heroesList)
             }
         }
 
