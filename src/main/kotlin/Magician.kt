@@ -14,4 +14,6 @@ class Magician(name: String, hp: Double, dmg: Double) : Heroes(name, hp, dmg) {
         println("Alle gegner haben ${getDmg()} von ${getName()} erhalten")
         return mutableListOf<Enemies>()
     }
+
+
 }

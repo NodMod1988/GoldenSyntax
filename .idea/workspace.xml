@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Added isBlocking in heroes class">
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="Add Block functions in enemy class for attack and attackGroup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Healer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Enemies.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Heroes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Magician.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1659781156567" duration="33416000" />
       <workItem from="1659992891660" duration="19934000" />
       <workItem from="1660050511252" duration="3467000" />
-      <workItem from="1660115944154" duration="363000" />
+      <workItem from="1660115944154" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="Main Class Created. closes #1">
       <created>1659517631732</created>
@@ -406,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660052375670</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Add Block functions in enemy class for attack and attackGroup">
+      <created>1660116343564</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1660116343564</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Helden und Feinlisten erstellt" />
     <MESSAGE value="Warrior attack funktion editiert" />
     <MESSAGE value="healGroup in Healer implementiert" />
     <MESSAGE value="Groupattack in Warrior Class implementiert" />
@@ -449,6 +455,7 @@
     <MESSAGE value="TODO eingefügt" />
     <MESSAGE value="Added block() to magician" />
     <MESSAGE value="Added isBlocking in heroes class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added isBlocking in heroes class" />
+    <MESSAGE value="Add Block functions in enemy class for attack and attackGroup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Block functions in enemy class for attack and attackGroup" />
   </component>
 </project>

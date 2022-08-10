@@ -38,9 +38,6 @@ open class Enemies{
         return hero
     }
 
-    fun block(): Double{
-        return 0.4
-    }
 
     open fun attackGroup(heroes: MutableList<Heroes>) : MutableList<Heroes>{
         return mutableListOf()

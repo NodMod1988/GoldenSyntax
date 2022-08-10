@@ -58,8 +58,8 @@ open class Heroes{
         return enemy
     }
 
-    open fun block(): Double{
-        return 1.0
+    open fun block(): Boolean{
+        return true
     }
 
     open  fun dodge():Boolean{
