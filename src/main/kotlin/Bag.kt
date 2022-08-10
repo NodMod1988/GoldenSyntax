@@ -37,20 +37,20 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
     fun useVitamins(heroesList: MutableList<Heroes>): MutableList<Heroes> {
 
         if (this.vitamins != 0) {
-            println("Choose a hero: held,magier,heiler")
+            println("Choose a hero: 1.held 2.magier 3.heiler")
                 var chooseHero = readln()
                 when (chooseHero) {
-                    "held" -> {
+                    "1" -> {
                         heroesList[0].setDmg(heroesList[0].getDmg() + 50)
                         println("Der Held ${heroesList[0].getName()} hat ein Vitamin genommen: ${heroesList[0].getDmg()} Dmg")
 
                     }
-                    "heiler" -> {
+                    "2" -> {
                         heroesList[1].setDmg(heroesList[1].getDmg() + 50)
                         println("Der Heiler ${heroesList[1].getName()} hat ein Vitamin genommen: ${heroesList[1].getDmg()} Dmg")
 
                     }
-                    "magier" -> {
+                    "3" -> {
                         heroesList[2].setDmg(heroesList[2].getDmg() + 50)
                         println("Der Magier ${heroesList[2].getName()} hat ein Vitamin genommen: ${heroesList[2].getDmg()} Dmg")
 

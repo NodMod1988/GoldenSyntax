@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="edited heroe funktions in a while loop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="55344a12-8de0-4145-9919-5befb46f1aa5" name="Changes" comment="fixed setIsBlocking in heroes class">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bag.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dragon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +81,7 @@
       <workItem from="1660050511252" duration="3467000" />
       <workItem from="1660115944154" duration="10652000" />
       <workItem from="1660132213459" duration="171000" />
-      <workItem from="1660166255771" duration="4588000" />
-    </task>
-    <task id="LOCAL-00006" summary="Dmg created in Enemy class. closes #6">
-      <created>1659531439041</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659531439041</updated>
+      <workItem from="1660166255771" duration="5117000" />
     </task>
     <task id="LOCAL-00007" summary="Refactor constructor in Enemies class">
       <created>1659532108434</created>
@@ -429,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660131690728</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="fixed setIsBlocking in heroes class">
+      <created>1660171164490</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1660171164491</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created enemyList = dragon.createEnemy(enemyList) in main function" />
     <MESSAGE value="recreated useVitamins method in Bag class" />
     <MESSAGE value="random aufruf in Enemylist" />
     <MESSAGE value="deleted for loops in bag class" />
@@ -472,17 +468,7 @@
     <MESSAGE value="edit heal method in healer class" />
     <MESSAGE value="edited heal parameter in main method" />
     <MESSAGE value="edited heroe funktions in a while loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited heroe funktions in a while loop" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Dragon.kt</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fixed setIsBlocking in heroes class" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed setIsBlocking in heroes class" />
   </component>
 </project>
