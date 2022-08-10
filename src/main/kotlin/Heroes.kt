@@ -19,7 +19,7 @@ open class Heroes{
     }
 
     fun setIsBlocking(isBlocking: Boolean){
-        this.name = name
+        this.isBlocking = isBlocking
     }
 
     fun getIsBlock(): Boolean{

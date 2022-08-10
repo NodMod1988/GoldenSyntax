@@ -35,6 +35,7 @@ class Bag(var healdrinks: Int = 3,var vitamins: Int = 1) {
     }
 
     fun useVitamins(heroesList: MutableList<Heroes>): MutableList<Heroes> {
+
         if (this.vitamins != 0) {
             println("Choose a hero: held,magier,heiler")
                 var chooseHero = readln()

@@ -21,14 +21,14 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
             if(heroes[i].getIsBlock()){
                 println("${heroes[i].getName()} ist den Angriff ausgewichen")
                 heroes[i].setIsBlocking(false)
-            }else{
+            }else if(!heroes[i].getIsBlock()){
             heroes[i].setHp(heroes[i].getHp() - getDmg())
-            println("Der Drache ${getName()} hat Gruppenschaden gemacht: ${heroes[i].getHp()}")
+            println("Der Drache ${getName()} hat Gruppenschaden gemacht:${heroes[i].getName()}: ${heroes[i].getHp()} Hp")
             }
         }
 
-        println("Alle Helden haben ${getDmg()} Dmg erhalten")
-        return mutableListOf()
+        println("Helden haben ${getDmg()} Dmg erhalten")
+        return heroes
     }
 
     override fun createEnemy(enemies: MutableList<Enemies>): MutableList<Enemies> {
