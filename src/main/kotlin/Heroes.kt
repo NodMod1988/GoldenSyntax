@@ -62,9 +62,6 @@ open class Heroes{
         return true
     }
 
-    open  fun dodge():Boolean{
-        return false
-    }
 
     open fun useBag(heroes: MutableList<Heroes>): MutableList<Heroes>{
         return heroes
