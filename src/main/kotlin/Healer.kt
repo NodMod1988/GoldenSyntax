@@ -6,8 +6,30 @@ class Healer(name:String, hp: Double, dmg: Double) : Heroes(name,hp,dmg) {
         return enemy
     }
 
-    fun heal(heroes: Heroes): Heroes {
-        heroes.setHp(heroes.getHp() + 30)
+    fun heal(heroes: MutableList<Heroes>): MutableList<Heroes> {
+        var action = """ Welcher Held soll geheilt werden? 
+                         1.Held       2.Heiler      3.Magier
+                     """.trimMargin()
+
+        println(action)
+
+        var a = readLine()
+
+        when(a){
+            "1" -> {
+                heroes[0].setHp(heroes[0].getHp() + 30)
+                println("Der Held wurde umm 30 HP geheilt")
+            }
+            "2" ->{
+                heroes[1].setHp(heroes[1].getHp() + 30)
+                println("Der Heiler wurde umm 30 HP geheilt")
+            }
+            "3" -> {
+                heroes[2].setHp(heroes[2].getHp() + 30)
+                println("Der Magier wurde umm 30 HP geheilt")
+            }
+            else -> println("Ungültige Eingabe")
+        }
         return heroes
     }
 

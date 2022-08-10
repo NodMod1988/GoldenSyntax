@@ -43,7 +43,7 @@ fun main() {
         var heroInput = readln()
         when (heroInput) {
             "1" -> held.attack(enemyList.random())
-            "2" -> held.block()
+            "2" -> held.setIsBlocking(true)
             "3" -> held.useBag(bag.useHealdrink(heroesList))
             "4" -> held.groupAttack(enemyList)
             }
@@ -54,7 +54,7 @@ fun main() {
         var healerInput = readln()
         when(healerInput){
             "1" -> healer.healGroup(heroesList)
-            "2" -> healer.attack(enemyList.random())
+            "2" -> healer.protect(heroesList)
             "3" -> healer.useBag(bag.useVitamins(heroesList))
             "4" -> healer.heal(held)
             }
