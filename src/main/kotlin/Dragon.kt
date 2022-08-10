@@ -6,6 +6,11 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
 
     override fun attack(hero: Heroes): Heroes {
+        if(hero.getIsBlock()){
+            println("${hero.getName()} hat den Angriff blockiert")
+            hero.setIsBlocking(false)
+            return hero
+        }else
         hero.setHp(hero.getHp()-getDmg())
         println("Der Drache ${getName()} hat den Helden ${hero.getName()} gehauen: ${hero.getHp()}")
         return hero
@@ -13,9 +18,15 @@ class Dragon(name:String, hp: Double, dmg: Double): Enemies(name, hp, dmg) {
 
     override fun attackGroup(heroes: MutableList<Heroes>) : MutableList<Heroes>{
         for (i in heroes.indices){
+            if(heroes[i].getIsBlock()){
+                println("${heroes[i].getName()} ist den Angriff ausgewichen")
+                heroes[i].setIsBlocking(false)
+            }else{
             heroes[i].setHp(heroes[i].getHp() - getDmg())
             println("Der Drache ${getName()} hat Gruppenschaden gemacht: ${heroes[i].getHp()}")
+            }
         }
+
         println("Alle Helden haben ${getDmg()} Dmg erhalten")
         return mutableListOf()
     }

@@ -33,7 +33,6 @@ fun main() {
                      """.trimIndent()
 
 
-    //TODO block funktion einfügen
 
     println("Spiel Startet")
     while (dragon.getHp() > 0 && held.getHp() > 0 ) {
@@ -66,7 +65,7 @@ fun main() {
         var magicianInput = readln()
         when(magicianInput){
             "1" -> magician.attack(enemyList.random())
-            "2" -> magician.block()
+            "2" -> magician.setIsBlocking(true)
             "3" -> magician.useBag(bag.useVitamins(heroesList))
             "4" -> magician.groupAttack(enemyList)
             }
