@@ -6,9 +6,6 @@ class Warrior(name: String, hp: Double, dmg: Double) : Heroes(name, hp, dmg) {
         return enemy
     }
 
-    override fun block(): Double {
-        return 0.7
-    }
 
     fun groupAttack(enemies: MutableList<Enemies>) : MutableList<Enemies>{
         for (i in enemies.indices){

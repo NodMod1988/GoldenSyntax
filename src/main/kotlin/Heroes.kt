@@ -58,10 +58,6 @@ open class Heroes{
         return enemy
     }
 
-    open fun block(): Boolean{
-        return true
-    }
-
 
     open fun useBag(heroes: MutableList<Heroes>): MutableList<Heroes>{
         return heroes
